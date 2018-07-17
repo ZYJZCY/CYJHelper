@@ -22,6 +22,7 @@
 		C4EE5CE320FDCCCC00556010 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */; };
 		C4EE5CE520FDCCCC00556010 /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CDB20FDCCCC00556010 /* CLLocation+YCLocation.m */; };
 		C4EE5CE620FDCCCC00556010 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */; };
+		C4EE5CEB20FDDA1600556010 /* CYJCheckNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 		C4EE5CDB20FDCCCC00556010 /* CLLocation+YCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+YCLocation.m"; sourceTree = "<group>"; };
 		C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYJCheckNetworkStatusManager.h; sourceTree = "<group>"; };
+		C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYJCheckNetworkStatusManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 				C4EE5CCE20FDCCC900556010 /* NSString+MD5Hash.m */,
 				C4EE5CD820FDCCCB00556010 /* UIView+Addition.h */,
 				C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */,
+				C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */,
+				C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */,
 			);
 			path = CYJHelper;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				C4EE5CDE20FDCCCC00556010 /* NSString+MD5Hash.m in Sources */,
 				C4EE5CE620FDCCCC00556010 /* NSString+Extension.m in Sources */,
 				C4EE5CE320FDCCCC00556010 /* UIView+Addition.m in Sources */,
+				C4EE5CEB20FDDA1600556010 /* CYJCheckNetworkStatusManager.m in Sources */,
 				C4EE5CE020FDCCCC00556010 /* CYJNavBarView.m in Sources */,
 				C4EE5CAA20FDCCA900556010 /* AppDelegate.m in Sources */,
 				C4EE5CDF20FDCCCC00556010 /* CYJPopImgView.m in Sources */,

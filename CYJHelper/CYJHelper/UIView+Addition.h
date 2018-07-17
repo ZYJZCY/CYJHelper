@@ -2,8 +2,8 @@
 //  UIView+Addition.h
 //  HelperProject
 //
-//  Created by wanghailong on 15/12/30.
-//  Copyright © 2015年 HailongExcellency. All rights reserved.
+//  Created by Jerry on 15/12/30.
+//  Copyright © 2018年 Jerry. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

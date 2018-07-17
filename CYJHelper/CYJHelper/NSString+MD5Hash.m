@@ -2,8 +2,8 @@
 //  NSString+MD5Hash.m
 //  Code
 //
-//  Created by wanghailong on 16/2/23.
-//  Copyright © 2016年 HailongExcellency. All rights reserved.
+//  Created by Jerry on 16/2/23.
+//  Copyright © 2018年 Jerry. All rights reserved.
 //
 
 #import "NSString+MD5Hash.h"
