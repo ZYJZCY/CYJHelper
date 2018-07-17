@@ -13,6 +13,8 @@ ios开发工具类
 ## CYJFactory.h 工厂类新建UILabel及UIButton等
 ## CYJHelper.h  define常量 固定高度及颜色
 ```
+//防止数据过多无法全部打印
+#define SLog(format, ...)
 //定义RGB值
 #define RGBA(r, g, b, a)
 #define RGB(r, g, b) RGBA(r, g, b, 1.f)
@@ -104,4 +106,18 @@ ios开发工具类
 +(NSString *)MD5ForUpper16Bate:(NSString *)str;
 //16位小写字母MD5加密
 +(NSString *)MD5ForLower16Bate:(NSString *)str;
+```
+## CYJCheckNetworkStatusManager.h   检测网络状态
+```
+/*! 未知网络 */
+CYJNetworkStatusUnknown           = 0,
+/*! 没有网络 */
+CYJNetworkStatusNotReachable,
+/*! 手机 3G/4G 网络 */
+CYJNetworkStatusReachableViaWWAN,
+/*! wifi 网络 */
+CYJNetworkStatusReachableViaWiFi
+
+//开启实时网络状态监测，通过Block回调实时获取(此方法可多次调用)
++ (void)cyj_startNetWorkMonitoringWithBlock:(CYJNetworkStatusBlock)networkStatus;
 ```
