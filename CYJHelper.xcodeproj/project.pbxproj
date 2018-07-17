@@ -107,7 +107,7 @@
 		C4EE5C9C20FDCCA800556010 = {
 			isa = PBXGroup;
 			children = (
-				C4EE5CA720FDCCA800556010 /* CYJHelp */,
+				C4EE5CA720FDCCA800556010 /* CYJHelper */,
 				C4EE5CC020FDCCAB00556010 /* CYJHelperTests */,
 				C4EE5CA620FDCCA800556010 /* Products */,
 				73E78F3C902E3AF166B2F089 /* Pods */,
@@ -124,7 +124,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4EE5CA720FDCCA800556010 /* CYJHelp */ = {
+		C4EE5CA720FDCCA800556010 /* CYJHelper */ = {
 			isa = PBXGroup;
 			children = (
 				C4EE5CE820FDCCED00556010 /* CYJHelper */,
@@ -138,7 +138,7 @@
 				C4EE5CB620FDCCAA00556010 /* Info.plist */,
 				C4EE5CB720FDCCAA00556010 /* main.m */,
 			);
-			path = CYJHelp;
+			path = CYJHelper;
 			sourceTree = "<group>";
 		};
 		C4EE5CC020FDCCAB00556010 /* CYJHelperTests */ = {
