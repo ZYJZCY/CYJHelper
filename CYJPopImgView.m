@@ -7,8 +7,8 @@
 //
 
 #import "CYJPopImgView.h"
-#import <UIImage+AFNetworking.h>
-#import <CYJHelper.h>
+#import "UIImage+AFNetworking.h"
+#import "CYJHelper.h"
 @implementation CYJPopImgView
 
 
