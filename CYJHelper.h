@@ -6,6 +6,7 @@
 //  Copyright © 2018年 Jerry. All rights reserved.
 //
 
+#import "NSString+Extension.h"
 #ifndef CYJHelper_h
 #define CYJHelper_h
 #define NSFoundationVersionNo (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_9_x_Max)?YES:NO
@@ -24,9 +25,9 @@
 //控件间的距离
 #define ControlDistance 20
 //定义屏幕宽度
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
 //定义屏幕高度
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
 
 #pragma mark - Color
 #define WhiteColor [UIColor whiteColor]
