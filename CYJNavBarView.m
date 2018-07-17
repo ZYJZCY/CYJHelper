@@ -7,9 +7,7 @@
 //
 
 #import "CYJNavBarView.h"
-#import "HelperDefine.h"
-#import "Factory.h"
-#import "Urls.h"
+#import "CYJHelper.h"
 @implementation CYJNavBarView
 
 
