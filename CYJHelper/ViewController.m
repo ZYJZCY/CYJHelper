@@ -7,17 +7,53 @@
 //
 
 #import "ViewController.h"
-#import "CYJCheckNetworkStatusManager.h"
-@interface ViewController ()
-
+#import "CYJHelper.h"
+#import "BaseViewController.h"
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray * nameArray;
+    NSArray * classArray;
+}
+@property (weak, nonatomic) IBOutlet UITableView *baseTableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"CYJHelperTest";
+    [self setUpUI];
+    [self initDataSource];
     [self checkNetworkStatus];
 }
+
+- (void)setUpUI{
+    [self.baseTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+}
+
+- (void)initDataSource{
+    nameArray = @[@"自定义导航栏",@"弹出框"];
+    classArray = @[@"CYJNavBarViewViewController",@"CYJPopImgViewViewController"];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text = nameArray[indexPath.row];
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return nameArray.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+     BaseViewController * viewController = nil;
+    viewController = [[NSClassFromString([classArray objectAtIndex:indexPath.row]) alloc] init];
+    viewController.vctitle = [nameArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+//检测网络状态
 - (void)checkNetworkStatus {
     [CYJCheckNetworkStatusManager cyj_startNetWorkMonitoringWithBlock:^(CYJNetworkStatus status) {
         NSString * msg;

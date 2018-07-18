@@ -8,23 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol showDetail <NSObject>
-
-- (void)showPopDetailWith:(NSString *)link andTitle:(NSString *)title;
-
-@end
+typedef void(^TouchActionBlock)(void);
 
 @interface CYJPopImgView : UIView
 //图片
-@property (nonatomic,strong)UIImageView * image;
+@property (nonatomic,strong)UIImageView * Image;
 //按钮
-@property (nonatomic,strong)UIButton * button;
+@property (nonatomic,strong)UIButton * removeButton;
 
-@property (nonatomic,weak)id<showDetail> delegate;
+@property (nonatomic,copy)TouchActionBlock touchBlock;
 //图片地址
-@property (nonatomic,copy)NSString * picUrl;
+@property (nonatomic,copy)NSString * ImgUrl;
+//视图frame
+@property (nonatomic,assign)CGRect popFrame;;
+//图片frame
+@property (nonatomic,assign)CGRect ImgFrame;
 //
-@property (nonatomic,copy)NSString * link;
+@property (nonatomic,copy)NSString * LinkUrl;
 
-- (instancetype)initWithFrame:(CGRect)frame andUrl:(NSString *)url andLink:(NSString *)link;
+- (instancetype)initWithFrame:(CGRect)frame ImgFrame:(CGRect)imgFrame ImgUrl:(NSString *)url LinkUrl:(NSString *)link ;
+/**s视图消失*/
+- (void)disMiss;
 @end

@@ -23,6 +23,9 @@
 		C4EE5CE520FDCCCC00556010 /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CDB20FDCCCC00556010 /* CLLocation+YCLocation.m */; };
 		C4EE5CE620FDCCCC00556010 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */; };
 		C4EE5CEB20FDDA1600556010 /* CYJCheckNetworkStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */; };
+		C4EE5D2020FED45B00556010 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D1F20FED45B00556010 /* BaseViewController.m */; };
+		C4EE5D2320FED49D00556010 /* CYJPopImgViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */; };
+		C4EE5D2620FED4B900556010 /* CYJNavBarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2520FED4B900556010 /* CYJNavBarViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,12 @@
 		C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYJCheckNetworkStatusManager.h; sourceTree = "<group>"; };
 		C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYJCheckNetworkStatusManager.m; sourceTree = "<group>"; };
+		C4EE5D1E20FED45B00556010 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C4EE5D1F20FED45B00556010 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C4EE5D2120FED49D00556010 /* CYJPopImgViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYJPopImgViewViewController.h; sourceTree = "<group>"; };
+		C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJPopImgViewViewController.m; sourceTree = "<group>"; };
+		C4EE5D2420FED4B900556010 /* CYJNavBarViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYJNavBarViewViewController.h; sourceTree = "<group>"; };
+		C4EE5D2520FED4B900556010 /* CYJNavBarViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJNavBarViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,11 +144,15 @@
 				C4EE5CA920FDCCA900556010 /* AppDelegate.m */,
 				C4EE5CAB20FDCCA900556010 /* ViewController.h */,
 				C4EE5CAC20FDCCA900556010 /* ViewController.m */,
+				C4EE5D1D20FED43C00556010 /* 弹出框 */,
+				C4EE5D1C20FED42C00556010 /* 自定义导航栏 */,
 				C4EE5CAE20FDCCA900556010 /* Main.storyboard */,
 				C4EE5CB120FDCCAA00556010 /* Assets.xcassets */,
 				C4EE5CB320FDCCAA00556010 /* LaunchScreen.storyboard */,
 				C4EE5CB620FDCCAA00556010 /* Info.plist */,
 				C4EE5CB720FDCCAA00556010 /* main.m */,
+				C4EE5D1E20FED45B00556010 /* BaseViewController.h */,
+				C4EE5D1F20FED45B00556010 /* BaseViewController.m */,
 			);
 			path = CYJHelper;
 			sourceTree = "<group>";
@@ -175,6 +188,24 @@
 				C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */,
 			);
 			path = CYJHelper;
+			sourceTree = "<group>";
+		};
+		C4EE5D1C20FED42C00556010 /* 自定义导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5D2420FED4B900556010 /* CYJNavBarViewViewController.h */,
+				C4EE5D2520FED4B900556010 /* CYJNavBarViewViewController.m */,
+			);
+			path = "自定义导航栏";
+			sourceTree = "<group>";
+		};
+		C4EE5D1D20FED43C00556010 /* 弹出框 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5D2120FED49D00556010 /* CYJPopImgViewViewController.h */,
+				C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */,
+			);
+			path = "弹出框";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EE5D2620FED4B900556010 /* CYJNavBarViewViewController.m in Sources */,
 				C4EE5CE120FDCCCC00556010 /* CYJFactory.m in Sources */,
+				C4EE5D2020FED45B00556010 /* BaseViewController.m in Sources */,
 				C4EE5CE520FDCCCC00556010 /* CLLocation+YCLocation.m in Sources */,
 				C4EE5CAD20FDCCA900556010 /* ViewController.m in Sources */,
 				C4EE5CB820FDCCAA00556010 /* main.m in Sources */,
@@ -328,6 +361,7 @@
 				C4EE5CEB20FDDA1600556010 /* CYJCheckNetworkStatusManager.m in Sources */,
 				C4EE5CE020FDCCCC00556010 /* CYJNavBarView.m in Sources */,
 				C4EE5CAA20FDCCA900556010 /* AppDelegate.m in Sources */,
+				C4EE5D2320FED49D00556010 /* CYJPopImgViewViewController.m in Sources */,
 				C4EE5CDF20FDCCCC00556010 /* CYJPopImgView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

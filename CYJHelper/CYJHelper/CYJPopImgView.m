@@ -20,42 +20,40 @@
 
 - (void)addView{
     self.userInteractionEnabled = YES;
-    self.image = [[UIImageView alloc]initWithFrame:CGRectMake(20, 80, self.frame.size.width-40, (self.frame.size.width-40)/66*79)];
-    self.image.center = self.center;
-    self.image.userInteractionEnabled = YES;
+    self.Image = [[UIImageView alloc]initWithFrame:self.ImgFrame];
+    self.Image.center = self.center;
+    self.Image.userInteractionEnabled = YES;
     [self initTap];
-    [self.image setImageWithURL:[NSURL URLWithString:_picUrl]];
-    [self addSubview:_image];
-    _button = [UIButton buttonWithType:UIButtonTypeCustom];
-    _button.frame = CGRectMake(self.frame.size.width/2-20, self.frame.size.height/2+CGRectGetHeight(_image.frame)/2+10, 50, 50);
-    [_button addTarget:self action:@selector(remove) forControlEvents:UIControlEventTouchUpInside];
-    [_button setImage:[UIImage imageNamed:@"btn"] forState:UIControlStateNormal];
-    [_button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    _button.titleLabel.font = [UIFont systemFontOfSize:40.f];
-    [self addSubview:_button];
+    [self.Image setImageWithURL:[NSURL URLWithString:self.ImgUrl]];
+    [self addSubview:self.Image];
+    self.removeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.removeButton.frame = CGRectMake(self.frame.size.width/2-20, self.frame.size.height/2+CGRectGetHeight(self.Image.frame)/2+10, 50, 50);
+    [self.removeButton addTarget:self action:@selector(disMiss) forControlEvents:UIControlEventTouchUpInside];
+    [self.removeButton setImage:[UIImage imageNamed:@"btn"] forState:UIControlStateNormal];
+    [self addSubview:self.removeButton];
 }
 //初始化点击手势
 - (void)initTap{
     UIGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapTarget)];
-    [_image addGestureRecognizer:tap];
+    [self.Image addGestureRecognizer:tap];
 }
 //点击事件
 - (void)tapTarget{
-    [self remove];
-    [self.delegate showPopDetailWith:self.link andTitle:@"详情"];
+    self.touchBlock();
 }
-- (void)remove{
+- (void)disMiss{
     [UIView animateWithDuration:0.3 animations:^{
-        self.frame = CGRectMake(0, -SCREEN_H, SCREEN_W, SCREEN_H);    }];
+        self.frame = CGRectMake(0, -SCREEN_H, SCREEN_W, SCREEN_H);
+    }];
 }
 
-
-- (instancetype)initWithFrame:(CGRect)frame andUrl:(NSString *)url andLink:(NSString *)link
-{
+- (instancetype)initWithFrame:(CGRect)frame ImgFrame:(CGRect)imgFrame ImgUrl:(NSString *)url LinkUrl:(NSString *)link{
     self = [super initWithFrame:frame];
     if (self) {
-        self.picUrl = [url copy];
-        self.link = [link copy];
+        self.ImgUrl = [url copy];
+        self.LinkUrl = [link copy];
+        self.ImgFrame = imgFrame;
+        self.popFrame = frame;
         self.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
     }
     return self;
