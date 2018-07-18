@@ -26,6 +26,8 @@
 		C4EE5D2020FED45B00556010 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D1F20FED45B00556010 /* BaseViewController.m */; };
 		C4EE5D2320FED49D00556010 /* CYJPopImgViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */; };
 		C4EE5D2620FED4B900556010 /* CYJNavBarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2520FED4B900556010 /* CYJNavBarViewViewController.m */; };
+		C4EE5D2920FF0B1900556010 /* CYJTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2820FF0B1900556010 /* CYJTimeButton.m */; };
+		C4EE5D2C20FF0D6F00556010 /* CYJTimeButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5D2B20FF0D6F00556010 /* CYJTimeButtonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJPopImgViewViewController.m; sourceTree = "<group>"; };
 		C4EE5D2420FED4B900556010 /* CYJNavBarViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYJNavBarViewViewController.h; sourceTree = "<group>"; };
 		C4EE5D2520FED4B900556010 /* CYJNavBarViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJNavBarViewViewController.m; sourceTree = "<group>"; };
+		C4EE5D2720FF0B1900556010 /* CYJTimeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYJTimeButton.h; sourceTree = "<group>"; };
+		C4EE5D2820FF0B1900556010 /* CYJTimeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJTimeButton.m; sourceTree = "<group>"; };
+		C4EE5D2A20FF0D6F00556010 /* CYJTimeButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYJTimeButtonViewController.h; sourceTree = "<group>"; };
+		C4EE5D2B20FF0D6F00556010 /* CYJTimeButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYJTimeButtonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 				C4EE5CA920FDCCA900556010 /* AppDelegate.m */,
 				C4EE5CAB20FDCCA900556010 /* ViewController.h */,
 				C4EE5CAC20FDCCA900556010 /* ViewController.m */,
+				C4EE5D2D20FF0D7800556010 /* 倒计时按钮 */,
 				C4EE5D1D20FED43C00556010 /* 弹出框 */,
 				C4EE5D1C20FED42C00556010 /* 自定义导航栏 */,
 				C4EE5CAE20FDCCA900556010 /* Main.storyboard */,
@@ -186,6 +193,8 @@
 				C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */,
 				C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */,
 				C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */,
+				C4EE5D2720FF0B1900556010 /* CYJTimeButton.h */,
+				C4EE5D2820FF0B1900556010 /* CYJTimeButton.m */,
 			);
 			path = CYJHelper;
 			sourceTree = "<group>";
@@ -206,6 +215,15 @@
 				C4EE5D2220FED49D00556010 /* CYJPopImgViewViewController.m */,
 			);
 			path = "弹出框";
+			sourceTree = "<group>";
+		};
+		C4EE5D2D20FF0D7800556010 /* 倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5D2A20FF0D6F00556010 /* CYJTimeButtonViewController.h */,
+				C4EE5D2B20FF0D6F00556010 /* CYJTimeButtonViewController.m */,
+			);
+			path = "倒计时按钮";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +373,9 @@
 				C4EE5CE520FDCCCC00556010 /* CLLocation+YCLocation.m in Sources */,
 				C4EE5CAD20FDCCA900556010 /* ViewController.m in Sources */,
 				C4EE5CB820FDCCAA00556010 /* main.m in Sources */,
+				C4EE5D2920FF0B1900556010 /* CYJTimeButton.m in Sources */,
 				C4EE5CDE20FDCCCC00556010 /* NSString+MD5Hash.m in Sources */,
+				C4EE5D2C20FF0D6F00556010 /* CYJTimeButtonViewController.m in Sources */,
 				C4EE5CE620FDCCCC00556010 /* NSString+Extension.m in Sources */,
 				C4EE5CE320FDCCCC00556010 /* UIView+Addition.m in Sources */,
 				C4EE5CEB20FDDA1600556010 /* CYJCheckNetworkStatusManager.m in Sources */,

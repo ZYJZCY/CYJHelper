@@ -32,8 +32,8 @@
 }
 
 - (void)initDataSource{
-    nameArray = @[@"自定义导航栏",@"弹出框"];
-    classArray = @[@"CYJNavBarViewViewController",@"CYJPopImgViewViewController"];
+    nameArray = @[@"自定义导航栏",@"弹出框",@"倒计时按钮"];
+    classArray = @[@"CYJNavBarViewViewController",@"CYJPopImgViewViewController",@"CYJTimeButtonViewController"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
