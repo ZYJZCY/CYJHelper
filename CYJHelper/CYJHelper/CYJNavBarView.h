@@ -28,5 +28,5 @@ typedef void(^CallRightBlock)(void);
  右侧按钮回调Block
  */
 @property (nonatomic,copy)CallRightBlock callRightBlock;
-- (instancetype)initWithFrame:(CGRect)frame andLeftImage:(UIImage *)leftImage andLeftTitle:(NSString *)leftTitle andRightImage:(UIImage *)rightImage andRightTitle:(NSString *)rightTitle;
+- (instancetype)initWithFrame:(CGRect)frame;
 @end

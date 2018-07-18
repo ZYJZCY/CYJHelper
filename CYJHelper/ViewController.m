@@ -26,7 +26,6 @@
     [self initDataSource];
     [self checkNetworkStatus];
 }
-
 - (void)setUpUI{
     [self.baseTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
@@ -47,6 +46,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        self.navigationController.navigationBar.hidden = YES;
+    }
      BaseViewController * viewController = nil;
     viewController = [[NSClassFromString([classArray objectAtIndex:indexPath.row]) alloc] init];
     viewController.vctitle = [nameArray objectAtIndex:indexPath.row];

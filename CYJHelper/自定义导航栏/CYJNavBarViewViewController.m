@@ -16,7 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CYJNavBarView * view = [[CYJNavBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, 64)];
+    view.backgroundColor = GrayColor;
+    [view.leftButton setTitleColor:BlackColor forState:UIControlStateNormal];
+    [view.rightButton setTitleColor:BlackColor forState:UIControlStateNormal];
+    [view.leftButton setTitle:@"左侧" forState:UIControlStateNormal];
+    __weak typeof(self) weakself = self;
+    view.callLeftBlock = ^{
+        [weakself popViewController];
+    };
+    view.callRightBlock = ^{
+        
+    };
+    [view.rightButton setTitle:@"右侧" forState:UIControlStateNormal];
+    [self.view addSubview:view];
     // Do any additional setup after loading the view.
+}
+- (void)popViewController{
+    [self.navigationController popViewControllerAnimated:YES];
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
