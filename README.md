@@ -71,15 +71,23 @@ ios开发工具类
 ## CYJPopImgView.h  弹出框
 ```
 //图片
-@property (nonatomic,strong)UIImageView * image;
+@property (nonatomic,strong)UIImageView * ImageView;
 //按钮
-@property (nonatomic,strong)UIButton * button;
-//代理
-@property (nonatomic,weak)id<showDetail> delegate;
-//图片地址
-@property (nonatomic,copy)NSString * picUrl;
-//跳转链接
-@property (nonatomic,copy)NSString * link;
+@property (nonatomic,strong)UIButton * removeButton;
+/**点击图片block回调*/
+@property (nonatomic,copy)TouchActionBlock touchBlock;
+/**图片地址*/
+@property (nonatomic,copy)NSString * ImgUrl;
+/**背景frame*/
+@property (nonatomic,assign)CGRect popFrame;;
+/**图片frame*/
+@property (nonatomic,assign)CGRect ImgFrame;
+/**链接地址*/
+@property (nonatomic,copy)NSString * LinkUrl;
+/**弹出框背景frame和图片frame*/
+- (instancetype)initWithFrame:(CGRect)frame ImgFrame:(CGRect)imgFrame;
+/**视图消失*/
+- (void)disMiss;
 ```
 ## NSString+Extension.h 常用字符串格式判断及时间戳转换
 ```
@@ -120,4 +128,11 @@ CYJNetworkStatusReachableViaWiFi
 
 //开启实时网络状态监测，通过Block回调实时获取(此方法可多次调用)
 + (void)cyj_startNetWorkMonitoringWithBlock:(CYJNetworkStatusBlock)networkStatus;
+```
+## CYJTimeButton.h  获取验证码倒计时按钮
+```
+/**倒计时结束按钮title*/
+@property (nonatomic,copy)NSString * endTitle;
+//按钮frame和倒计时时长
+- (instancetype)initWithFrame:(CGRect)frame allTime:(NSInteger)time;
 ```
