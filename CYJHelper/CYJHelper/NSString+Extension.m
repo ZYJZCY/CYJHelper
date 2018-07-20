@@ -14,7 +14,7 @@
 {
     // 创建正则表达式
     NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:0 error:nil];
-    // 2.测试字符串
+    // 结果
     NSArray *results = [regular matchesInString:self options:0 range:NSMakeRange(0, self.length)];
     
     return results.count > 0;
