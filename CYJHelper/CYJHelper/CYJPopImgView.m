@@ -41,6 +41,14 @@
 - (void)tapTarget{
     self.touchBlock();
 }
+
+- (void)show {
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    [UIView animateWithDuration:0.5 animations:^{
+        self.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H);
+    }];
+}
+
 - (void)disMiss{
     [UIView animateWithDuration:0.3 animations:^{
         self.frame = CGRectMake(0, -SCREEN_H, SCREEN_W, SCREEN_H);
@@ -49,6 +57,7 @@
 - (instancetype)initWithFrame:(CGRect)frame ImgFrame:(CGRect)imgFrame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
         self.ImgFrame = imgFrame;
         self.popFrame = frame;
     }

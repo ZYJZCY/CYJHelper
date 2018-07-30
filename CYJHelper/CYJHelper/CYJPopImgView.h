@@ -29,4 +29,6 @@ typedef void(^TouchActionBlock)(void);
 - (instancetype)initWithFrame:(CGRect)frame ImgFrame:(CGRect)imgFrame;
 /**视图消失*/
 - (void)disMiss;
+/**显示弹窗*/
+- (void)show;
 @end

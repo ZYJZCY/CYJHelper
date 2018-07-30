@@ -24,17 +24,17 @@
     CYJPopImgView * pop = [[CYJPopImgView alloc]initWithFrame:CGRectMake(0, -SCREEN_H, SCREEN_W, SCREEN_H) ImgFrame:CGRectMake(20, 80, SCREEN_W-40, (SCREEN_W-40)/66*79)];
     pop.ImgUrl = @"http://server.yundanche.com.cn:9002/vehicle/img/noticepage/a169f2c0-72bf-4f61-853e-a27eb383e23a.png" ;
     pop.LinkUrl = @"https://mp.weixin.qq.com/s?__biz=MzIzMTc3MTIxMw==&mid=2247484301&idx=1&sn=8284fb1fbe004d7c9ded842945ea9f48&chksm=e89e5eafdfe9d7b9db3f3b670ee1944530cd72e77a0292317c210b7dac91caad3647ab33fa3f#rd";
-    pop.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
     //防止循环引用
     __weak typeof(pop) weakPop = pop;
     pop.touchBlock = ^{
         [weakPop disMiss];
         NSLog(@"点击视图");
     };
-    [self.navigationController.view addSubview:pop];
-    [UIView animateWithDuration:0.5 animations:^{
-        pop.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H);
-    }];
+    [pop show];
+//    [self.navigationController.view addSubview:pop];
+//    [UIView animateWithDuration:0.5 animations:^{
+//        pop.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {

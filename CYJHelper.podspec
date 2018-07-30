@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'CYJHelper'
-s.version = '1.1.0'
+s.version = '1.1.1'
 s.license = 'MIT'
 s.summary = 'Tools for iOS development.'
 s.homepage = "https://github.com/ZYJZCY/CYJHelper"
@@ -9,6 +9,5 @@ s.source = { :git => 'https://github.com/ZYJZCY/CYJHelper.git', :tag => s.versio
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
 s.source_files = "CYJHelper/CYJHelper/**/*.{h,m}"
-s.resources = "CYJHelper/Assets.xcassets"
 s.dependency 'AFNetworking'
 end
