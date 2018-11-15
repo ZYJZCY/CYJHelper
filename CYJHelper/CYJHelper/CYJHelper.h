@@ -11,7 +11,6 @@
 #import "CYJFactory.h"
 #import "CYJNavBarView.h"
 #import "CYJPopImgView.h"
-#import "NSString+MD5Hash.h"
 #import "UIView+Addition.h"
 #import "CYJCheckNetworkStatusManager.h"
 #import "CYJTimeButton.h"
@@ -53,9 +52,9 @@
 //iPhone X底部白条
 #define UnderTabBarHeight [NSString underTabBarHeight]
 //状态栏高度
-#define StatusBarHeight [NSString statusBarHeight]
+#define StatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
 //navigationbar+状态栏高度
-#define ContentOffSet [NSString ContentOffSetHeight]
+#define NavBarHeight [NSString ContentOffSetHeight]
 //tabbar高度
 #define TabBarHeight [NSString tabBarHeight]
 //十六进制颜色转换

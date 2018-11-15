@@ -15,7 +15,6 @@
 		C4EE5CB520FDCCAA00556010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EE5CB320FDCCAA00556010 /* LaunchScreen.storyboard */; };
 		C4EE5CB820FDCCAA00556010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CB720FDCCAA00556010 /* main.m */; };
 		C4EE5CC220FDCCAB00556010 /* CYJHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CC120FDCCAB00556010 /* CYJHelperTests.m */; };
-		C4EE5CDE20FDCCCC00556010 /* NSString+MD5Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CCE20FDCCC900556010 /* NSString+MD5Hash.m */; };
 		C4EE5CDF20FDCCCC00556010 /* CYJPopImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CD020FDCCCA00556010 /* CYJPopImgView.m */; };
 		C4EE5CE020FDCCCC00556010 /* CYJNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CD320FDCCCA00556010 /* CYJNavBarView.m */; };
 		C4EE5CE120FDCCCC00556010 /* CYJFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE5CD420FDCCCA00556010 /* CYJFactory.m */; };
@@ -59,8 +58,6 @@
 		C4EE5CC320FDCCAB00556010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EE5CCC20FDCCC900556010 /* CLLocation+YCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+YCLocation.h"; sourceTree = "<group>"; };
 		C4EE5CCD20FDCCC900556010 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		C4EE5CCE20FDCCC900556010 /* NSString+MD5Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Hash.m"; sourceTree = "<group>"; };
-		C4EE5CCF20FDCCCA00556010 /* NSString+MD5Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Hash.h"; sourceTree = "<group>"; };
 		C4EE5CD020FDCCCA00556010 /* CYJPopImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYJPopImgView.m; sourceTree = "<group>"; };
 		C4EE5CD120FDCCCA00556010 /* CYJPopImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYJPopImgView.h; sourceTree = "<group>"; };
 		C4EE5CD220FDCCCA00556010 /* CYJFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYJFactory.h; sourceTree = "<group>"; };
@@ -122,6 +119,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4D7F4E5219D67DB002B3CD9 /* CYJNavBarView */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CD620FDCCCB00556010 /* CYJNavBarView.h */,
+				C4EE5CD320FDCCCA00556010 /* CYJNavBarView.m */,
+			);
+			path = CYJNavBarView;
+			sourceTree = "<group>";
+		};
+		C4D7F4E6219D6800002B3CD9 /* CYJPopImgView */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CD120FDCCCA00556010 /* CYJPopImgView.h */,
+				C4EE5CD020FDCCCA00556010 /* CYJPopImgView.m */,
+			);
+			path = CYJPopImgView;
+			sourceTree = "<group>";
+		};
+		C4D7F4E7219D6827002B3CD9 /* CYJFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CD220FDCCCA00556010 /* CYJFactory.h */,
+				C4EE5CD420FDCCCA00556010 /* CYJFactory.m */,
+			);
+			path = CYJFactory;
+			sourceTree = "<group>";
+		};
+		C4D7F4E8219D684C002B3CD9 /* CYJCheckNetworkStatusManager */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */,
+				C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */,
+			);
+			path = CYJCheckNetworkStatusManager;
+			sourceTree = "<group>";
+		};
+		C4D7F4E9219D6861002B3CD9 /* CYJTimeButton */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5D2720FF0B1900556010 /* CYJTimeButton.h */,
+				C4EE5D2820FF0B1900556010 /* CYJTimeButton.m */,
+			);
+			path = CYJTimeButton;
+			sourceTree = "<group>";
+		};
+		C4D7F4EA219D688C002B3CD9 /* CLLocation+YCLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CCC20FDCCC900556010 /* CLLocation+YCLocation.h */,
+				C4EE5CDB20FDCCCC00556010 /* CLLocation+YCLocation.m */,
+			);
+			path = "CLLocation+YCLocation";
+			sourceTree = "<group>";
+		};
+		C4D7F4EB219D689D002B3CD9 /* NSString+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CCD20FDCCC900556010 /* NSString+Extension.h */,
+				C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */,
+			);
+			path = "NSString+Extension";
+			sourceTree = "<group>";
+		};
+		C4D7F4EC219D68BA002B3CD9 /* UIView+Addition */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE5CD820FDCCCB00556010 /* UIView+Addition.h */,
+				C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */,
+			);
+			path = "UIView+Addition";
+			sourceTree = "<group>";
+		};
 		C4EE5C9C20FDCCA800556010 = {
 			isa = PBXGroup;
 			children = (
@@ -145,11 +214,11 @@
 		C4EE5CA720FDCCA800556010 /* CYJHelper */ = {
 			isa = PBXGroup;
 			children = (
-				C4EE5CE820FDCCED00556010 /* CYJHelper */,
 				C4EE5CA820FDCCA900556010 /* AppDelegate.h */,
 				C4EE5CA920FDCCA900556010 /* AppDelegate.m */,
 				C4EE5CAB20FDCCA900556010 /* ViewController.h */,
 				C4EE5CAC20FDCCA900556010 /* ViewController.m */,
+				C4EE5CE820FDCCED00556010 /* CYJHelper */,
 				C4EE5D2D20FF0D7800556010 /* 倒计时按钮 */,
 				C4EE5D1D20FED43C00556010 /* 弹出框 */,
 				C4EE5D1C20FED42C00556010 /* 自定义导航栏 */,
@@ -176,25 +245,15 @@
 		C4EE5CE820FDCCED00556010 /* CYJHelper */ = {
 			isa = PBXGroup;
 			children = (
-				C4EE5CCC20FDCCC900556010 /* CLLocation+YCLocation.h */,
-				C4EE5CDB20FDCCCC00556010 /* CLLocation+YCLocation.m */,
-				C4EE5CD220FDCCCA00556010 /* CYJFactory.h */,
-				C4EE5CD420FDCCCA00556010 /* CYJFactory.m */,
 				C4EE5CD520FDCCCB00556010 /* CYJHelper.h */,
-				C4EE5CD620FDCCCB00556010 /* CYJNavBarView.h */,
-				C4EE5CD320FDCCCA00556010 /* CYJNavBarView.m */,
-				C4EE5CD120FDCCCA00556010 /* CYJPopImgView.h */,
-				C4EE5CD020FDCCCA00556010 /* CYJPopImgView.m */,
-				C4EE5CCD20FDCCC900556010 /* NSString+Extension.h */,
-				C4EE5CDC20FDCCCC00556010 /* NSString+Extension.m */,
-				C4EE5CCF20FDCCCA00556010 /* NSString+MD5Hash.h */,
-				C4EE5CCE20FDCCC900556010 /* NSString+MD5Hash.m */,
-				C4EE5CD820FDCCCB00556010 /* UIView+Addition.h */,
-				C4EE5CD920FDCCCB00556010 /* UIView+Addition.m */,
-				C4EE5CE920FDDA1600556010 /* CYJCheckNetworkStatusManager.h */,
-				C4EE5CEA20FDDA1600556010 /* CYJCheckNetworkStatusManager.m */,
-				C4EE5D2720FF0B1900556010 /* CYJTimeButton.h */,
-				C4EE5D2820FF0B1900556010 /* CYJTimeButton.m */,
+				C4D7F4EC219D68BA002B3CD9 /* UIView+Addition */,
+				C4D7F4EB219D689D002B3CD9 /* NSString+Extension */,
+				C4D7F4EA219D688C002B3CD9 /* CLLocation+YCLocation */,
+				C4D7F4E7219D6827002B3CD9 /* CYJFactory */,
+				C4D7F4E6219D6800002B3CD9 /* CYJPopImgView */,
+				C4D7F4E5219D67DB002B3CD9 /* CYJNavBarView */,
+				C4D7F4E9219D6861002B3CD9 /* CYJTimeButton */,
+				C4D7F4E8219D684C002B3CD9 /* CYJCheckNetworkStatusManager */,
 			);
 			path = CYJHelper;
 			sourceTree = "<group>";
@@ -374,7 +433,6 @@
 				C4EE5CAD20FDCCA900556010 /* ViewController.m in Sources */,
 				C4EE5CB820FDCCAA00556010 /* main.m in Sources */,
 				C4EE5D2920FF0B1900556010 /* CYJTimeButton.m in Sources */,
-				C4EE5CDE20FDCCCC00556010 /* NSString+MD5Hash.m in Sources */,
 				C4EE5D2C20FF0D6F00556010 /* CYJTimeButtonViewController.m in Sources */,
 				C4EE5CE620FDCCCC00556010 /* NSString+Extension.m in Sources */,
 				C4EE5CE320FDCCCC00556010 /* UIView+Addition.m in Sources */,

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CYJNavBarView * view = [[CYJNavBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, 64)];
+    CYJNavBarView * view = [[CYJNavBarView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, NavBarHeight)];
     view.backgroundColor = GrayColor;
     [view.leftButton setTitleColor:BlackColor forState:UIControlStateNormal];
     [view.rightButton setTitleColor:BlackColor forState:UIControlStateNormal];
