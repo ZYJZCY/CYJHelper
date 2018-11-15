@@ -8,6 +8,7 @@
 
 #import "NSString+Extension.h"
 #import <sys/utsname.h>
+#import "CYJHelper.h"
 @implementation NSString (Extension)
 
 - (BOOL)match:(NSString *)pattern
@@ -95,6 +96,12 @@
     if ([platform isEqualToString:@"iPhone10,5"]) return @"iPhone 8 Plus";
     if ([platform isEqualToString:@"iPhone10,3"]) return @"iPhone X";
     if ([platform isEqualToString:@"iPhone10,6"]) return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,8"])//iPhone XR
+        return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,2"])//iPhone XS
+        return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,4"] || [platform isEqualToString:@"iPhone11,6"])//iPhone XS Max
+        return @"iPhone X";
     
     if ([platform isEqualToString:@"iPod1,1"])   return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])   return @"iPod Touch 2G";
@@ -138,9 +145,7 @@
     if ([platform isEqualToString:@"iPad6,4"])   return @"iPad Pro (9.7 inch)";
     if ([platform isEqualToString:@"iPad6,7"])   return @"iPad Pro (12.9 inch)";
     if ([platform isEqualToString:@"iPad6,8"])   return @"iPad Pro (12.9 inch)";
-    
-    if ([platform isEqualToString:@"i386"])      return @"iPhone Simulator";
-    if ([platform isEqualToString:@"x86_64"])    return @"iPhone Simulator";
+
     return platform;
 }
 
@@ -154,11 +159,7 @@
 }
 
 + (float)ContentOffSetHeight{
-    if ([[NSString platform] isEqualToString:@"iPhone X"]) {
-        return 88.f;
-    }else{
-        return 64.f;
-    }
+    return 44 + StatusBarHeight;
 }
 
 + (float)underTabBarHeight{

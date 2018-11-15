@@ -20,12 +20,12 @@
     self.userInteractionEnabled = YES;
     //返回按钮
     UIButton * left = [UIButton buttonWithType:UIButtonTypeCustom];
-    left.frame = CGRectMake(10, ContentOffSet-42, 40, 40);
+    left.frame = CGRectMake(10, NavBarHeight-42, 40, 40);
     [left addTarget:self action:@selector(leftButtonTarget) forControlEvents:UIControlEventTouchUpInside];
     self.leftButton = left;
     
     UIButton * right = [UIButton buttonWithType:UIButtonTypeCustom];
-    right.frame = CGRectMake(SCREEN_W-50, ContentOffSet-42, 40, 40);
+    right.frame = CGRectMake(SCREEN_W-50, NavBarHeight-42, 40, 40);
     [right addTarget:self action:@selector(rightButtonTarget) forControlEvents:UIControlEventTouchUpInside];
     self.rightButton = right;
     [self addSubview:self.leftButton];
