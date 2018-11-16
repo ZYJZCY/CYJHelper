@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'CYJHelper'
-s.version = '1.1.5'
+s.version = '1.1.6'
 s.license = 'MIT'
 s.summary = 'Tools for iOS development.'
 s.homepage = "https://github.com/ZYJZCY/CYJHelper"
