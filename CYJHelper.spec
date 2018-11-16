@@ -1,14 +1,13 @@
 Pod::Spec.new do |s|
 s.name = 'CYJHelper'
-s.version = '1.1.4'
-s.license = 'Sample'
-s.summary = 'iOS开发工具类'
-s.description = <<-DESC iOS开发工具类 DESC>>
-s.homepage = 'https://github.com/ZYJZCY/CYJHelper.git'
-s.authors = { 'ZYJZCY' => '912327710@qq.com' }
-s.source = { :git => "https://github.com/ZYJZCY/CYJHelper.git", :tag => "1.1.4"}
-s.requires_arc = trues.ios.deployment_target = '9.0'
-s.source_files = "CYJHelper/CYJHelper/*.{h,m}"
-s.source = "CYJHelper/Assets.xcassets"
-s.frameworks = 'AFNetworking'
+s.version = '1.1.5'
+s.license = 'MIT'
+s.summary = 'Tools for iOS development.'
+s.homepage = "https://github.com/ZYJZCY/CYJHelper"
+s.authors = { 'ZCYZYJ' => '912327710@qq.com' }
+s.source = { :git => 'https://github.com/ZYJZCY/CYJHelper.git', :tag => s.version.to_s }
+s.requires_arc = true
+s.ios.deployment_target = '8.0'
+s.source_files = "CYJHelper/CYJHelper/**/*.{h,m}"
+s.dependency 'AFNetworking'
 end
